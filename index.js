@@ -115,7 +115,7 @@ function endGame() {
   for(var i = 0; i<ROCKS.length; i++){
     ROCKS[i].remove();
   }
-  clearInterval(gameInterval);
+  
   window.removeEventListener('keydown', moveDodger);
   alert("YOU LOSE!!!");
   START.innerHTML = "Play Again?";
