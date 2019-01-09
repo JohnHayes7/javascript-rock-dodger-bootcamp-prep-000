@@ -113,8 +113,7 @@ function endGame() {
   clearInterval(gameInterval);
   
   for(var i = 0; i<ROCKS.length; i++){
-    GAME.removeChild(ROCKS); 
-    ROCKS.shift();
+    ROCKS[i].remove
   }
   clearInterval(gameInterval);
   window.removeEventListener('keydown', moveDodger);
