@@ -112,7 +112,7 @@ function createRock(x) {
 function endGame() {
   while(ROCKS.length > 0){
     GAME.removeChild(ROCKS); 
-    ROCKS.shift;
+    ROCKS.shift();
   }
   clearInterval(gameInterval);
   window.removeEventListener('keydown', moveDodger);
