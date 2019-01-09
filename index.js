@@ -51,14 +51,14 @@ function createRock(x) {
   // Hmmm, why would we have used `var` here?
   var top = 0;
 
-  rock.style.top = top;
+  
 
   /**
    * Now that we have a rock, we'll need to append
    * it to GAME and move it downwards.
    */
    GAME.appendChild(rock);
-   window.requestAnimationFrame(moveRock;
+   window.requestAnimationFrame(moveRock);
 
 
   /**
@@ -72,7 +72,7 @@ function createRock(x) {
      * If a rock collides with the DODGER,
      * we should call endGame()
      */
-     
+    rock.style.top = `${top+=2}px`;
     if(checkCollision(rock) === true){
       return endGame();
     }
